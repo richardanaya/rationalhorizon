@@ -557,10 +557,11 @@ footer {
     .logo-container {
         margin-top: 70px;
         margin-bottom: 0;
-        padding-left: 100vw;
-        padding-right: 100vw;
-        margin-left: -100vw;
-        margin-right: -100vw;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
     
     .tagline {
