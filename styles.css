@@ -541,6 +541,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     header h1 {
         font-size: 2rem;
     }
@@ -554,7 +558,7 @@ footer {
         padding: 0;
     }
     
-    .index-page .logo-container {
+    .logo-container {
         margin-top: 70px;
         margin-bottom: 0;
         padding-left: 0;
@@ -562,6 +566,7 @@ footer {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
+        background: #2C2C34;
     }
     
     .tagline {
