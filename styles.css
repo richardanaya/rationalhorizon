@@ -121,7 +121,7 @@ body:not(.index-page) main {
 }
 
 body:not(.index-page) header {
-    padding-top: 2rem;
+    padding-top: calc(80px + 2rem);
 }
 
 ul:not(.capabilities-list) {
@@ -314,6 +314,7 @@ footer {
     text-align: center;
     padding: 1.5rem;
     margin-top: 3rem;
+    margin-bottom: 0;
 }
 
 .grade-stats {
