@@ -9,29 +9,93 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #fafafa;
+    position: relative;
+    margin: 0;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    padding: 1.1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.home-logo {
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.home-logo:hover {
+    transform: scale(1.05);
+}
+
+.about-link {
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    transition: color 0.2s ease;
+}
+
+.about-link:hover {
+    color: #ccc;
 }
 
 header {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
-    color: white;
-    padding: 2rem 0;
+    background: transparent;
+    color: #333;
+    padding: 0;
+    margin: 0;
     text-align: center;
 }
 
+.logo-container {
+    position: relative;
+    margin: 0;
+    margin-top: 80px;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    background: #2C2C34;
+    margin-left: -100vw;
+    margin-right: -100vw;
+    padding-left: 100vw;
+    padding-right: 100vw;
+}
+
+.header-logo {
+    display: block;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
 .nav-link {
-    color: #ecf0f1;
+    color: #3498db;
     text-decoration: none;
     font-size: 1rem;
     margin-top: 1rem;
     display: inline-block;
     padding: 0.5rem 1rem;
-    border: 1px solid #ecf0f1;
+    border: 1px solid #3498db;
     border-radius: 4px;
     transition: background-color 0.2s;
 }
 
 .nav-link:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: #3498db;
+    color: white;
 }
 
 header h1 {
@@ -41,7 +105,7 @@ header h1 {
 }
 
 .tagline {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     opacity: 0.9;
     font-style: italic;
 }
@@ -50,6 +114,25 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+}
+
+body:not(.index-page) main {
+    padding-top: calc(80px + 2rem);
+}
+
+body:not(.index-page) header {
+    padding-top: 2rem;
+}
+
+ul:not(.capabilities-list) {
+    padding-left: 2rem;
+    margin: 1rem 0;
+}
+
+ul:not(.capabilities-list) li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    padding-left: 0.5rem;
 }
 
 section {
@@ -86,14 +169,17 @@ h4 {
 
 .curriculum-philosophy ul {
     background: white;
-    padding: 1.5rem;
+    padding: 2rem 2.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-left: 0;
+    padding-left: 3rem;
 }
 
 .curriculum-philosophy li {
-    margin-bottom: 0.8rem;
-    padding-left: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    line-height: 1.6;
 }
 
 .curriculum-structure {
@@ -347,22 +433,23 @@ footer {
 .capabilities-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .capabilities-list li {
-    padding: 0.8rem 0;
+    padding: 1rem 0 1rem 2rem;
     border-bottom: 1px solid #e9ecef;
     position: relative;
-    padding-left: 1.5rem;
+    line-height: 1.6;
 }
 
 .capabilities-list li:before {
     content: "✓";
     position: absolute;
-    left: 0;
+    left: 0.5rem;
     color: #27ae60;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .capabilities-list li:last-child {
