@@ -506,6 +506,16 @@ footer {
     line-height: 1.3;
 }
 
+.week-card h5 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.week-card h5 a:hover {
+    color: #3498db;
+}
+
 .week-card p {
     color: #555;
     font-size: 0.9rem;
