@@ -84,16 +84,19 @@
 
 ### Functional Requirements
 
-- **FR-001**: System MUST [specific capability, e.g., "allow users to create accounts"]
-- **FR-002**: System MUST [specific capability, e.g., "validate email addresses"]  
-- **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
-- **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
-- **FR-005**: System MUST [behavior, e.g., "log all security events"]
+**Note**: For static site features, focus on content, layout, and navigation requirements.
+All requirements MUST comply with zero-dependency principle (HTML + CSS only).
+
+- **FR-001**: Page MUST [specific content, e.g., "display curriculum overview"]
+- **FR-002**: Page MUST [specific layout, e.g., "organize grades in grid format"]
+- **FR-003**: Users MUST be able to [key interaction, e.g., "navigate between grade levels"]
+- **FR-004**: Design MUST [visual requirement, e.g., "maintain consistent styling via styles.css"]
+- **FR-005**: Pages MUST [accessibility, e.g., "use semantic HTML5 elements"]
 
 *Example of marking unclear requirements:*
 
-- **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
-- **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
+- **FR-006**: Page MUST include [NEEDS CLARIFICATION: specific sections not defined]
+- **FR-007**: Navigation MUST link to [NEEDS CLARIFICATION: target pages not specified]
 
 ### Key Entities *(include if feature involves data)*
 

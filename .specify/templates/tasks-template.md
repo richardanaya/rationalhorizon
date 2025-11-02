@@ -20,10 +20,11 @@ description: "Task list template for feature implementation"
 
 ## Path Conventions
 
-- **Single project**: `src/`, `tests/` at repository root
-- **Web app**: `backend/src/`, `frontend/src/`
-- **Mobile**: `api/src/`, `ios/src/` or `android/src/`
-- Paths shown below assume single project - adjust based on plan.md structure
+**Static Site**: HTML files at repository root or in semantic subdirectories
+- **HTML pages**: `index.html`, `about.html`, `[feature].html`, `[directory]/index.html`
+- **Styles**: `styles.css` (single file, append new rules)
+- **Assets**: Images and resources in root or subdirectories
+- No src/, tests/, or build directories - static files only
 
 <!-- 
   ============================================================================
@@ -46,30 +47,30 @@ description: "Task list template for feature implementation"
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-**Purpose**: Project initialization and basic structure
+**Purpose**: HTML structure and CSS foundation
 
-- [ ] T001 Create project structure per implementation plan
-- [ ] T002 Initialize [language] project with [framework] dependencies
-- [ ] T003 [P] Configure linting and formatting tools
+- [ ] T001 Create HTML file(s) with semantic structure per implementation plan
+- [ ] T002 Add standard document head (meta tags, title, styles.css link)
+- [ ] T003 [P] Add navigation elements consistent with existing site
 
 ---
 
 ## Phase 2: Foundational (Blocking Prerequisites)
 
-**Purpose**: Core infrastructure that MUST be complete before ANY user story can be implemented
+**Purpose**: Core HTML structure and CSS base that all user stories depend on
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-Examples of foundational tasks (adjust based on your project):
+Examples of foundational tasks for static site:
 
-- [ ] T004 Setup database schema and migrations framework
-- [ ] T005 [P] Implement authentication/authorization framework
-- [ ] T006 [P] Setup API routing and middleware structure
-- [ ] T007 Create base models/entities that all stories depend on
-- [ ] T008 Configure error handling and logging infrastructure
-- [ ] T009 Setup environment configuration management
+- [ ] T004 Create base HTML structure with header, main, footer
+- [ ] T005 [P] Add core CSS classes to styles.css for layout
+- [ ] T006 [P] Setup navigation structure (top-nav, links, etc.)
+- [ ] T007 Add responsive breakpoints to styles.css
+- [ ] T008 Verify semantic HTML structure and accessibility
+- [ ] T009 Test base layout on mobile, tablet, desktop
 
-**Checkpoint**: Foundation ready - user story implementation can now begin in parallel
+**Checkpoint**: Foundation ready - content sections can now be added in parallel
 
 ---
 
@@ -88,12 +89,12 @@ Examples of foundational tasks (adjust based on your project):
 
 ### Implementation for User Story 1
 
-- [ ] T012 [P] [US1] Create [Entity1] model in src/models/[entity1].py
-- [ ] T013 [P] [US1] Create [Entity2] model in src/models/[entity2].py
-- [ ] T014 [US1] Implement [Service] in src/services/[service].py (depends on T012, T013)
-- [ ] T015 [US1] Implement [endpoint/feature] in src/[location]/[file].py
-- [ ] T016 [US1] Add validation and error handling
-- [ ] T017 [US1] Add logging for user story 1 operations
+- [ ] T012 [P] [US1] Write HTML content for [section/feature] in [page].html
+- [ ] T013 [P] [US1] Add semantic markup and structure
+- [ ] T014 [US1] Add CSS classes to elements (semantic names)
+- [ ] T015 [US1] Append CSS rules for [section/feature] to styles.css
+- [ ] T016 [US1] Test responsive behavior (mobile, tablet, desktop)
+- [ ] T017 [US1] Verify semantic HTML and accessibility
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
