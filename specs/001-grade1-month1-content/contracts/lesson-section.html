@@ -1,0 +1,198 @@
+<!-- LESSON SECTION TEMPLATE -->
+<!-- This is a reusable component for a single daily lesson within a week page -->
+<!-- Copy this structure for each of the 5 days (Monday-Friday) -->
+
+<section id="[day-lowercase]" class="lesson-day">
+    <h2>[Day]: [LESSON_TITLE]</h2>
+    <p class="lesson-duration"><strong>Time:</strong> 15-20 minutes</p>
+
+    <!-- LEARNING OBJECTIVE -->
+    <div class="lesson-objective">
+        <h3>Learning Objective</h3>
+        <p><strong>Student will be able to:</strong> [OBJECTIVE_TEXT]</p>
+        <!-- OBJECTIVE_TEXT must be measurable and use action verbs -->
+        <!-- Examples:
+             - Count from 1 to 10 using physical objects
+             - Identify the letter 'B' and produce its sound
+             - Describe the American flag using correct vocabulary
+        -->
+    </div>
+
+    <!-- MATERIALS LIST -->
+    <div class="lesson-materials">
+        <h3>Materials Needed</h3>
+        <ul>
+            <li>[Material 1 - be specific, e.g., "10 small objects (blocks, beans, coins)"]</li>
+            <li>[Material 2]</li>
+            <li>[Material 3]</li>
+            <!-- Keep list to 3-5 items maximum -->
+            <!-- 90% should be household items or free resources (SC-003) -->
+        </ul>
+    </div>
+
+    <!-- MATERIALS SUBSTITUTIONS (Required - SC-008: 100% of lessons) -->
+    <div class="materials-substitutions">
+        <h4>Materials Substitutions</h4>
+        <ul>
+            <li><strong>[Primary Material from list above]</strong> → [substitute 1], [substitute 2], or [substitute 3]</li>
+            <li><strong>[Another Primary Material]</strong> → [substitutes]</li>
+        </ul>
+        <!-- Provide at least one substitution per lesson -->
+    </div>
+
+    <!-- PROCEDURE (4-Part Structure) -->
+    <div class="lesson-procedure">
+        <h3>Procedure</h3>
+
+        <div class="procedure-part">
+            <h4>Introduction (2-3 minutes)</h4>
+            <p>[Hook activity or question to engage student. Should activate prior knowledge and create interest.]</p>
+            <!-- Week 1 Example (detailed):
+                 "Show your student a collection of colorful objects (blocks, crayons, toys). Ask: 'How many do you think we have?' Allow them to guess. Say: 'Today we're going to learn to count these objects from 1 to 10 to find out the exact number!'"
+            -->
+            <!-- Weeks 2-4 Example (template):
+                 "Review yesterday's learning. Introduce today's topic: [TOPIC]. Ask an engaging question to spark curiosity."
+            -->
+        </div>
+
+        <div class="procedure-part">
+            <h4>Main Activity (8-10 minutes)</h4>
+            <p>[Core instruction with hands-on materials. Include specific teacher actions, student actions, and key teaching points.]</p>
+            <!-- Week 1 Example (detailed):
+                 "1. Model counting: Point to each object and count aloud '1, 2, 3...' up to 10. Emphasize one-to-one correspondence (one object = one number).
+                  2. Student mirrors: Have your student point and count with you. Repeat 2-3 times.
+                  3. Student independent count: Ask your student to count the objects alone while you observe.
+                  4. Mix it up: Rearrange objects and count again. Explain that the order doesn't matter—there are still 10 objects.
+                  5. Try different objects: Use coins, beans, or toys and count to 10 again."
+            -->
+            <!-- Weeks 2-4 Template:
+                 "1. [Teacher demonstrates concept]
+                  2. [Student practices with teacher]
+                  3. [Student applies independently]
+                  4. [Variation or extension]"
+            -->
+        </div>
+
+        <div class="procedure-part">
+            <h4>Practice (5-7 minutes)</h4>
+            <p>[Student applies learning independently or with minimal guidance. Concrete practice activity that reinforces the objective.]</p>
+            <!-- Week 1 Example (detailed):
+                 "Give your student a pile of 10 objects (different from the Main Activity). Say: 'Can you count these and tell me how many there are?' Observe as they count. If they skip a number or count incorrectly, gently guide: 'Let's slow down and count together.' Provide 2-3 different sets of 10 objects for repeated practice."
+            -->
+            <!-- Weeks 2-4 Template:
+                 "Provide [PRACTICE_MATERIAL]. Have student [PRACTICE_ACTION]. Observe and provide gentle corrections as needed."
+            -->
+        </div>
+
+        <div class="procedure-part">
+            <h4>Closure (2-3 minutes)</h4>
+            <p>[Review key learning, celebrate success, and preview tomorrow's lesson. Create sense of accomplishment.]</p>
+            <!-- Week 1 Example (detailed):
+                 "Ask: 'What did we learn to do today?' (Count to 10!) Celebrate: 'You did a great job counting objects! Tomorrow we'll learn to count even higher.' Give a high-five or positive affirmation."
+            -->
+            <!-- Weeks 2-4 Template:
+                 "Review: [KEY_LEARNING]. Celebrate student effort. Preview: Tomorrow we'll [NEXT_TOPIC]."
+            -->
+        </div>
+    </div>
+
+    <!-- ASSESSMENT (2-3 Questions Required - FR-012) -->
+    <div class="lesson-assessment">
+        <h3>Check for Understanding</h3>
+        <ul>
+            <li>[Assessment Question 1] - Expected: [correct response or observable behavior]</li>
+            <li>[Assessment Question 2] - Expected: [correct response or observable behavior]</li>
+            <li>[Optional Assessment Question 3] - Expected: [correct response or observable behavior]</li>
+        </ul>
+        <!-- Assessment Types for Grade 1:
+             - Observation: "Does the student [observable action]?"
+             - Oral Question: "Ask: [question]. Listen for [expected answer]."
+             - Demonstration: "Can the student show you [skill]?"
+        -->
+        <!-- Examples:
+             - Does the student correctly count all 10 objects without skipping numbers? - Expected: Points to each object once and counts 1-10 in order
+             - Ask: "What comes after the number 7?" - Expected: "Eight"
+             - Can the student count a new set of objects independently? - Expected: Successfully counts without assistance
+        -->
+    </div>
+
+    <!-- SUPPLEMENTAL RESOURCES (Optional - FR-007, FR-007a) -->
+    <div class="supplemental-resources">
+        <h3>Supplemental Resources (Optional)</h3>
+        <p class="resource-note">These are optional enhancements, not required for the 15-20 minute core lesson.</p>
+
+        <!-- Only include sections where you have resources -->
+        <!-- If no resources for a category, omit that div entirely -->
+
+        <!-- YOUTUBE VIDEOS -->
+        <div class="youtube-resources">
+            <h4>YouTube Videos</h4>
+            <ul>
+                <li><a href="[YOUTUBE_URL]" target="_blank">[Video Title]</a> - [1 sentence: how to use this video, e.g., "Watch before the lesson as a warm-up" or "Use during Main Activity to reinforce concept"]</li>
+                <li><a href="[YOUTUBE_URL_2]" target="_blank">[Video Title 2]</a> - [usage description]</li>
+            </ul>
+        </div>
+
+        <!-- MIDJOURNEY PROMPTS -->
+        <div class="midjourney-prompts">
+            <h4>Midjourney Image Prompts</h4>
+            <p>Use these prompts to generate visual aids for this lesson:</p>
+            <p><code>[PROMPT_TEXT - copy-paste ready, G-rated, educational]</code></p>
+            <p class="prompt-usage">[How to use the generated image: "Print and use as flashcards" or "Display on tablet during introduction" etc.]</p>
+        </div>
+
+        <!-- LIBRARY BOOKS -->
+        <div class="library-books">
+            <h4>Library Books</h4>
+            <ul>
+                <li><em>[Book Title]</em> by [Author Name] - [1 sentence: how this book extends the lesson or provides additional practice]</li>
+                <li><em>[Book Title 2]</em> by [Author Name 2] - [usage description]</li>
+            </ul>
+            <p class="library-note">Can't find these at your library? Search YouTube for "[Book Title] read aloud" for narrated versions.</p>
+        </div>
+    </div>
+
+    <!-- EXTENSION ACTIVITIES (Optional - for advanced students who finish early) -->
+    <!-- Only include if lesson has natural extension -->
+    <div class="extension-activities">
+        <h4>Extension Activities (If Time Allows)</h4>
+        <p>[Optional challenge for students who complete the lesson in under 15 minutes]</p>
+        <!-- Example: "Can you count backwards from 10 to 1? Try it!" -->
+    </div>
+</section>
+
+<!-- NOTES FOR CONTENT CREATORS:
+
+Week 1 Lessons (all 5 subjects):
+- Use DETAILED procedure descriptions (see examples above)
+- Include specific teacher scripts and student actions
+- These serve as exemplars that teachers follow for Weeks 2-4
+
+Weeks 2-4 Lessons:
+- Use STRUCTURED TEMPLATES (see template format above)
+- Provide clear guidance but allow teacher adaptation
+- Teachers familiar with Week 1 format can fill in details
+
+Content Guidelines:
+- Keep language simple and directive (imperative mood for teachers)
+- Use concrete examples, not abstract concepts
+- Align with Objectivist principles: reality-based, reason-focused
+- Materials: household items > purchased items > internet resources
+- Time strictly 15-20 minutes for Grade 1 attention span
+
+CSS Classes Used (defined in styles.css):
+- .lesson-day
+- .lesson-duration
+- .lesson-objective
+- .lesson-materials
+- .materials-substitutions
+- .lesson-procedure
+- .procedure-part
+- .lesson-assessment
+- .supplemental-resources
+- .youtube-resources
+- .midjourney-prompts
+- .library-books
+- .extension-activities
+
+-->
