@@ -29,12 +29,12 @@
 
 **Note**: This phase prepares the content but doesn't modify any project files yet.
 
-- [ ] T001 [P] Extract Week 1 content from all 5 subject pages (grade1/{subject}/week1.html)
-- [ ] T002 [P] Extract Week 2 content from all 5 subject pages (grade1/{subject}/week2.html)
-- [ ] T003 [P] Extract Week 3 content from all 5 subject pages (grade1/{subject}/week3.html)
-- [ ] T004 [P] Extract Week 4 content from all 5 subject pages (grade1/{subject}/week4.html)
-- [ ] T005 Synthesize Week 1-4 summaries (2-4 sentences each, all subjects mentioned, parent-friendly language)
-- [ ] T006 Create placeholder content template for Weeks 5-36 (generic with subject names in `<strong>` tags)
+- [X] T001 [P] Extract Week 1 content from all 5 subject pages (grade1/{subject}/week1.html)
+- [X] T002 [P] Extract Week 2 content from all 5 subject pages (grade1/{subject}/week2.html)
+- [X] T003 [P] Extract Week 3 content from all 5 subject pages (grade1/{subject}/week3.html)
+- [X] T004 [P] Extract Week 4 content from all 5 subject pages (grade1/{subject}/week4.html)
+- [X] T005 Synthesize Week 1-4 summaries (2-4 sentences each, all subjects mentioned, parent-friendly language)
+- [X] T006 Create placeholder content template for Weeks 5-36 (generic with subject names in `<strong>` tags)
 
 **Output**: 4 complete week summaries + 1 placeholder template ready for HTML insertion
 
@@ -48,12 +48,12 @@
 
 **⚠️ CRITICAL**: CSS must be in place before adding HTML to avoid unstyled content flash
 
-- [ ] T007 Open styles.css and scroll to bottom of file
-- [ ] T008 Copy CSS from specs/002-weekly-subject-overview/contracts/css-additions.css
-- [ ] T009 Paste CSS at bottom of styles.css (after existing rules, before closing)
-- [ ] T010 Verify CSS syntax (no missing semicolons, brackets, or typos)
-- [ ] T011 Save styles.css
-- [ ] T012 Verify file saved correctly (tail -20 styles.css shows new .weekly-overview rules)
+- [X] T007 Open styles.css and scroll to bottom of file
+- [X] T008 Copy CSS from specs/002-weekly-subject-overview/contracts/css-additions.css
+- [X] T009 Paste CSS at bottom of styles.css (after existing rules, before closing)
+- [X] T010 Verify CSS syntax (no missing semicolons, brackets, or typos)
+- [X] T011 Save styles.css
+- [X] T012 Verify file saved correctly (tail -20 styles.css shows new .weekly-overview rules)
 
 **Checkpoint**: CSS Foundation complete - HTML can now reference these classes
 
@@ -67,19 +67,19 @@
 
 ### Implementation for User Story 1
 
-- [ ] T013 [US1] Open grade1/index.html in text editor
-- [ ] T014 [US1] Locate line 141 (closing `</section>` tag of "objectivist-principles" section)
-- [ ] T015 [US1] Locate line 143 (opening `<footer>` tag)
-- [ ] T016 [US1] Copy HTML structure from specs/002-weekly-subject-overview/contracts/html-structure.html
-- [ ] T017 [US1] Paste HTML between line 141 and line 143 (after principles, before footer)
-- [ ] T018 [US1] Replace Week 1 placeholder with extracted Week 1 summary from Phase 1
-- [ ] T019 [US1] Replace Week 2 placeholder with extracted Week 2 summary from Phase 1
-- [ ] T020 [US1] Replace Week 3 placeholder with extracted Week 3 summary from Phase 1
-- [ ] T021 [US1] Replace Week 4 placeholder with extracted Week 4 summary from Phase 1
-- [ ] T022 [US1] Fill Weeks 5-36 with placeholder template from Phase 1 (update week numbers sequentially)
-- [ ] T023 [US1] Verify all 36 weeks present (grep -c '<h4>Week' grade1/index.html returns 36)
-- [ ] T024 [US1] Verify 4-space indentation maintained throughout new section
-- [ ] T025 [US1] Save grade1/index.html
+- [X] T013 [US1] Open grade1/index.html in text editor
+- [X] T014 [US1] Locate line 141 (closing `</section>` tag of "objectivist-principles" section)
+- [X] T015 [US1] Locate line 143 (opening `<footer>` tag)
+- [X] T016 [US1] Copy HTML structure from specs/002-weekly-subject-overview/contracts/html-structure.html
+- [X] T017 [US1] Paste HTML between line 141 and line 143 (after principles, before footer)
+- [X] T018 [US1] Replace Week 1 placeholder with extracted Week 1 summary from Phase 1
+- [X] T019 [US1] Replace Week 2 placeholder with extracted Week 2 summary from Phase 1
+- [X] T020 [US1] Replace Week 3 placeholder with extracted Week 3 summary from Phase 1
+- [X] T021 [US1] Replace Week 4 placeholder with extracted Week 4 summary from Phase 1
+- [X] T022 [US1] Fill Weeks 5-36 with placeholder template from Phase 1 (update week numbers sequentially)
+- [X] T023 [US1] Verify all 36 weeks present (grep -c '<h4>Week' grade1/index.html returns 36)
+- [X] T024 [US1] Verify 4-space indentation maintained throughout new section
+- [X] T025 [US1] Save grade1/index.html
 
 ### Manual Testing for User Story 1
 
