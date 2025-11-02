@@ -20,11 +20,11 @@
 **Language/Version**: HTML5, CSS3
 **Primary Dependencies**: None (zero-dependency static site)
 **Storage**: Static files only (HTML, CSS, images)
-**Testing**: Manual browser testing across devices/screen sizes
+**Testing**: Manual browser testing only (no automated tests, no testing frameworks)
 **Target Platform**: Any static web host (GitHub Pages, Netlify, etc.)
 **Project Type**: Static website (HTML + single CSS file)
 **Performance Goals**: Fast page load (<2s on 3G), minimal asset size
-**Constraints**: No JavaScript, no build process, no frameworks
+**Constraints**: No JavaScript, no build process, no frameworks, no automated tests
 **Scale/Scope**: [Number of pages, sections to add or NEEDS CLARIFICATION]
 
 ## Constitution Check

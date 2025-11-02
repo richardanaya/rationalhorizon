@@ -8,7 +8,7 @@ description: "Task list template for feature implementation"
 **Input**: Design documents from `/specs/[###-feature-name]/`
 **Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md, contracts/
 
-**Tests**: The examples below include test tasks. Tests are OPTIONAL - only include them if explicitly requested in the feature specification.
+**Tests**: No automated tests for this static content project. Quality assurance is done through manual browser testing and content review (see constitution.md Principle VI).
 
 **Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
 
@@ -80,23 +80,14 @@ Examples of foundational tasks for static site:
 
 **Independent Test**: [How to verify this story works on its own]
 
-### Tests for User Story 1 (OPTIONAL - only if tests requested) ⚠️
-
-> **NOTE: Write these tests FIRST, ensure they FAIL before implementation**
-
-- [ ] T010 [P] [US1] Contract test for [endpoint] in tests/contract/test_[name].py
-- [ ] T011 [P] [US1] Integration test for [user journey] in tests/integration/test_[name].py
-
 ### Implementation for User Story 1
 
-- [ ] T012 [P] [US1] Write HTML content for [section/feature] in [page].html
-- [ ] T013 [P] [US1] Add semantic markup and structure
-- [ ] T014 [US1] Add CSS classes to elements (semantic names)
-- [ ] T015 [US1] Append CSS rules for [section/feature] to styles.css
-- [ ] T016 [US1] Test responsive behavior (mobile, tablet, desktop)
-- [ ] T017 [US1] Verify semantic HTML and accessibility
+- [ ] T010 [P] [US1] Write HTML content for [section/feature] in [page].html
+- [ ] T011 [P] [US1] Add semantic markup and structure
+- [ ] T012 [US1] Add CSS classes to elements (semantic names)
+- [ ] T013 [US1] Append CSS rules for [section/feature] to styles.css
 
-**Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
+**Checkpoint**: User Story 1 complete - content created and styled
 
 ---
 
