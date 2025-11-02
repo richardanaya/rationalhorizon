@@ -1,0 +1,119 @@
+<!--
+  CONTRACT: Weekly Overview HTML Structure
+  Feature: 002-weekly-subject-overview
+  Purpose: Defines the exact HTML structure to be added to grade1/index.html
+
+  INSERTION POINT: After line 141 (closing </section> of "objectivist-principles")
+                   Before line 143 (opening <footer>)
+
+  VALIDATION:
+  - Must use semantic HTML5 elements
+  - Must follow existing indentation (4 spaces)
+  - Must include all 36 weeks
+  - Week numbers must be sequential 1-36
+  - No hyperlinks in week descriptions
+  - Subject names wrapped in <strong> tags
+-->
+
+    <section class="weekly-overview">
+        <h3>Weekly Overview</h3>
+        <p class="section-intro">
+            Each week brings new discoveries and skills. Below is a week-by-week overview
+            showing what students learn across all subjects throughout the year.
+        </p>
+
+        <div class="week-grid">
+            <!-- Week 1 Example (Full Content) -->
+            <div class="week-entry">
+                <h4>Week 1</h4>
+                <p>
+                    Students begin their learning journey by counting to 10 in <strong>Mathematics</strong>,
+                    recognizing letter sounds in <strong>Reading</strong>, observing seasonal changes in
+                    <strong>Science</strong>, learning about the American flag in <strong>Social Studies</strong>,
+                    and listening to classic folk tales in <strong>Literature</strong>.
+                </p>
+            </div>
+
+            <!-- Week 2 Example (Full Content) -->
+            <div class="week-entry">
+                <h4>Week 2</h4>
+                <p>
+                    [Content to be synthesized from subject week pages: math/week2.html,
+                    reading/week2.html, science/week2.html, social-studies/week2.html,
+                    literature/week2.html]
+                </p>
+            </div>
+
+            <!-- Week 3 Example (Full Content) -->
+            <div class="week-entry">
+                <h4>Week 3</h4>
+                <p>
+                    [Content to be synthesized from subject week pages]
+                </p>
+            </div>
+
+            <!-- Week 4 Example (Full Content) -->
+            <div class="week-entry">
+                <h4>Week 4</h4>
+                <p>
+                    [Content to be synthesized from subject week pages]
+                </p>
+            </div>
+
+            <!-- Weeks 5-36 Placeholder Examples -->
+            <div class="week-entry">
+                <h4>Week 5</h4>
+                <p>
+                    Content coming soon. Students will continue building foundational skills
+                    in <strong>Mathematics</strong>, <strong>Reading</strong>, <strong>Science</strong>,
+                    <strong>Social Studies</strong>, and <strong>Literature</strong>.
+                </p>
+            </div>
+
+            <!-- Repeat pattern for weeks 6-36 with incremented week numbers -->
+            <!--
+            IMPLEMENTATION NOTE:
+            Copy the Week 5 placeholder structure and change the week number for each.
+            Keep placeholder text consistent or vary slightly to show progression.
+            -->
+
+            <div class="week-entry">
+                <h4>Week 6</h4>
+                <p>Content coming soon. Building on skills from previous weeks across all subjects.</p>
+            </div>
+
+            <!-- ...continue through week 36... -->
+
+            <div class="week-entry">
+                <h4>Week 36</h4>
+                <p>
+                    The final week celebrates a year of growth, with students demonstrating
+                    mastery in <strong>Mathematics</strong>, <strong>Reading</strong>,
+                    <strong>Science</strong>, <strong>Social Studies</strong>, and <strong>Literature</strong>.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+<!--
+  INTEGRATION CHECKLIST:
+  ✓ Section placed after "objectivist-principles" section
+  ✓ Section placed before <footer>
+  ✓ Proper 4-space indentation maintained
+  ✓ All 36 weeks included (verify count)
+  ✓ Week numbers sequential 1-36
+  ✓ No duplicate week numbers
+  ✓ Subject names in <strong> tags
+  ✓ No hyperlinks (<a> tags) in descriptions
+  ✓ Section intro text present
+  ✓ Semantic HTML5 elements used
+
+  MANUAL TESTING:
+  - Open grade1/index.html in browser
+  - Scroll to bottom (above footer)
+  - Verify "Weekly Overview" heading visible
+  - Verify all 36 weeks display
+  - Check responsive layout on mobile/tablet/desktop
+  - Verify no broken layout or overflow
+-->
